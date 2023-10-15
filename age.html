@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>All-culator</title>
+</head>
+
+<body>
+    <header>
+     <div class="home-header">
+        <div class="header-icon"><span is="type-async" id="type-text">Simple</span>
+            <span class="blinking-cursor">_</span><span>Calculator</span>
+            </div>
+        <div class="header-content"></div>
+     </div>
+    </header>
+    <main>
+        <section>
+            <div class="nav-bar-calc container"><ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link  set-sizeofnavlinks" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link   set-sizeofnavlinks" href="index.html">Scientific</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link set-sizeofnavlinks" href="financial.html">Financial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link set-sizeofnavlinks active" href="age.html"  target="_self">Age</a>
+                </li>
+              </ul></div>
+            <Calculator->
+                <div class="container-of-calculators container">
+                    <div class="scientific-calc">
+                        <div class="display-calc">
+                            <input type="text" name="display-calc" id="screen" placeholder="0">
+                        </div>
+                        <div class="btns-calc">
+                            <input type="text" name="dateb" id="dateb" placeholder="Enter Date Of birth">
+                            <div class="rows-calc">
+                                <button onclick="backspc()">CE</button>
+                                <button  onclick="screen.value=eval(screen.value)">=</button>
+                            </div>
+                            <div class="rows-calc">
+                                <button class="btn-calc">1</button>
+                                <button class="btn-calc">2</button>
+                                <button class="btn-calc">3</button>
+                                <button class="btn-calc">4</button>
+                                <button class="btn-calc">5</button>
+                                <button class="btn-calc">6</button>
+                                <button class="btn-calc">7</button>
+                                <button class="btn-calc">8</button>
+                                <button class="btn-calc">9</button>
+                                <button class="btn-calc">/</button>
+                            </div>
+                            <center>  NOTE : THIS FUNCTION IS UNDER-WORK</center>
+                        </div>
+                    </div>
+                </div>
+            </Calculator->
+        <section>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

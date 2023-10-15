@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>All-culator</title>
+</head>
+
+<body>
+    <header>
+     <div class="home-header">
+        <div class="header-icon"><span is="type-async" id="type-text">Simple</span>
+            <span class="blinking-cursor">_</span><span>Calculator</span>
+            </div>
+        <div class="header-content"></div>
+     </div>
+    </header>
+    <main>
+        <section>
+            <div class="nav-bar-calc container"><ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link  set-sizeofnavlinks" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active  set-sizeofnavlinks" href="index.html" target="_self">Scientific</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link set-sizeofnavlinks" href="financial.html">Financial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link set-sizeofnavlinks" href="age.html">Age</a>
+                </li>
+              </ul></div>
+            <Calculator->
+                <div class="container-of-calculators container">
+                    <div class="scientific-calc">
+                        <div class="display-calc">
+                            <input type="text" name="display-calc" id="screen" placeholder="0">
+                        </div>
+                        <div class="btns-calc">
+                            <div class="rows-calc">
+                                <button onclick="backspc()">CE</button>
+                                <button onclick="fact()">X!</button>
+                                <button class="btn-calc">(</button>
+                                <button class="btn-calc">)</button>
+                                <button class="btn-calc">%</button>
+                                <button onclick="screen.value=''">AC</button>
+                            </div>
+                            <div class="rows-calc">
+                                <button onclick="sin()">sin</button>
+                                <button onclick="pi()">pi</button>
+                                <button class="btn-calc">7</button>
+                                <button class="btn-calc">8</button>
+                                <button class="btn-calc">9</button>
+                                <button class="btn-calc">/</button>
+                            </div>
+                            <div class="rows-calc">
+                                <button onclick="cos()">cos</button>
+                                <button onclick="log()">log</button>
+                                <button class="btn-calc">4</button>
+                                <button class="btn-calc">5</button>
+                                <button class="btn-calc">6</button>
+                                <button class="btn-calc">X</button>
+                            </div>
+                            <div class="rows-calc">
+                                <button onclick="tan()">tan</button>
+                                <button onclick="sqrt()">root</button>
+                                <button class="btn-calc">1</button>
+                                <button class="btn-calc">2</button>
+                                <button class="btn-calc">3</button>
+                                <button class="btn-calc">-</button>
+                            </div>
+                            <div class="rows-calc">
+                                <button onclick="e()">e</button>
+                                <button onclick="pow()">X <span style="position: relative; bottom: 0.4em; "></span></button>
+                                <button class="btn-calc">0</button>
+                                <button class="btn-calc">.</button>
+                                <button  onclick="screen.value=eval(screen.value)">=</button>
+                                <button class="btn-calc">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Calculator->
+        <section>
+    </main>
+    <footer>
+        <center>THANKS</center>
+        <center>Kindly keep visiting for upcoming useful tools</center>
+        <center><p id="hero">&copy This Site is made by Ayush Singh Tomar </p></center>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

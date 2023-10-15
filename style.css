@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('DIGITALDREAMFAT.ttf');
+}
+body{
+    background-color:#3d4543; 
+}
+header,
+main,
+footer {
+    width: 95%;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+header {
+    margin-top: 40px;
+}
+section{
+    background-color:#1b1f1e; 
+}
+Calculator- {
+    margin-top: 8px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background: #ececec;
+   
+
+}
+
+.scientific-calc {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px #cdced1;
+}
+
+.display-calc input[type="text"] {
+    font-family: 'digital-clock-font';
+}
+
+.display-calc #screen {
+    width: 97%;
+    height: 70px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: 0.5em;
+    background: #cdced3;
+    border-radius: 6px;
+    box-shadow: inset 4px 4px 4px #cbced1,
+                inset -4px -4px 4px #fff;
+             background-color: #bccd95 ;  
+
+
+}
+
+.home-header {
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #bccd95 ;  
+}
+
+.home-header span {
+    line-height: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'digital-clock-font';
+
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:40");
+
+.blinking-cursor {
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+main {
+    height: 70vh;
+}
+
+footer {
+    height: 30vh;
+    background-color: #1b1f1e;
+    color: #fff;
+}
+
+.container-of-calculators {
+
+    padding: 4px;
+
+}
+.btns-calc {
+  width: 100%;
+  margin-top: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btns-calc .rows-calc button
+{
+ width: 80px;
+ height: 30px;
+ font-size: 16px;
+ border: none;
+ margin: 5px;
+ border-radius: 4px;
+ box-shadow: 5px 5px 8px #00000020,
+            -5px -5px 8px #ffffff;
+ 
+}
+/* ===============================================================================media queries=================================================================================== */
+@media screen and (max-width: 770px) {
+
+    .scientific-calc
+    {
+        height: 80vh;
+    }
+    .home-header
+    {
+        height: 10vh;
+    }
+    .home-header span {
+        line-height: 70px;
+        font-weight: 700;
+        font-size: 15px;
+        
+    
+    }
+    header,
+main,
+footer {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+header {
+    margin-top: 10px;
+}
+.btns-calc .rows-calc button
+{
+ width: 60px;
+ height: 20px;
+ font-size: 16px;
+ border: none;
+ margin: 5px;
+ border-radius: 4px;
+ box-shadow: 5px 5px 2px #00000020,
+            -5px -5px 2px #ffffff;
+ 
+}
+main {
+    height: 100vh;
+}
+.set-sizeofnavlinks
+{
+    font-size: 12px;
+}
+}
+#hero{
+    font-size: 15px;
+ color: grey;
+ margin-top: 50px;
+}
